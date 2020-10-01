@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>landing_page3</class>
+ <widget class="QDialog" name="landing_page3">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>797</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>User</string>
+  </property>
+  <widget class="QGroupBox" name="Header">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#2a5d67;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#fff;</string>
+    </property>
+    <property name="text">
+     <string>Bus Ticket Reservation</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="change_ps_btn">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>20</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid;
+background-color: lavender;</string>
+    </property>
+    <property name="text">
+     <string>Change Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#back {
+	border-color: rgb(0, 0, 0);
+    border: 2px solid #555;
+    border-radius: 20px;
+    border-style: outset;
+    background: qradialgradient(
+        cx: 0.5, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 10, stop: 0 #fff, stop: 1 #888
+        );
+    padding: 5px;
+	
+	border-image: url(:/Bus_Icons/Back.png);
+
+    }
+
+
+#back:pressed {
+    border-style: inset;
+    background: qradialgradient(
+    	cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+    	radius: 10, stop: 0 #fff, stop: 1 #ddd
+	 );
+
+	
+	border-image: url(:/Bus_Icons/Back_Pressed.png);
+    }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>470</y>
+     <width>801</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#2a5d67;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="From">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>100</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="To">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>100</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tick_name">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>160</y>
+     <width>311</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Phone_num">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>220</y>
+     <width>311</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string>9999999999</string>
+   </property>
+   <property name="placeholderText">
+    <string>Phone Number</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="seat_num">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>280</y>
+     <width>311</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Enter One seat No.</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="see_seat">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>340</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>View Seat</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>400</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

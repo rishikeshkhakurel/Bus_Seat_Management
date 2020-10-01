@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>owner_page</class>
+ <widget class="QDialog" name="owner_page">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>797</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>admin</string>
+  </property>
+  <widget class="QPushButton" name="edit_reservation_btn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>290</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Edit Reservation</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="header">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#2a5d67;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#fff;</string>
+    </property>
+    <property name="text">
+     <string>Bus Ticket Reservation</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logout_btn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>30</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: black;
+background-color: lavender;
+border: 1px solid;</string>
+    </property>
+    <property name="text">
+     <string>Log out</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>781</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Please enter the bus route you want to view/make edit(s) on</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="header_2">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>520</y>
+     <width>811</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#2a5d67;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="from">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>130</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="placeholderText">
+    <string>From</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="to">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>140</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="placeholderText">
+    <string>To</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_route_btn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>340</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Add Route</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="remove_route_btn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>390</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 88, 76);</string>
+   </property>
+   <property name="text">
+    <string>Remove Route</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="view_reservation_btn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>240</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>View Reservation Details</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
