@@ -44,14 +44,32 @@ landing_page3::~landing_page3()
 
 void landing_page3::on_see_seat_clicked()
 {
+    QSqlDatabase db;
+        db = QSqlDatabase::addDatabase("QSQLITE");
+        db.setDatabaseName("E:/project/Bus_Seat_Management_System/bus.db");
+        db.open();
 
-    landing_page landing_page;
-    landing_page.setModal(true);
-    landing_page.exec();
+        QString from= ui->From->currentText();
+        QString to=ui->To->currentText();
+        QString fromto= from+to;
+
+        QSqlQuery query1,query2;
+
+        query1.exec("create table tempp (name text)");
+        query2.prepare("insert into tempp (name)" "values(:fromto)");
+        query2.bindValue(":fromto",fromto);
+        query2.exec();
+
+        db.close();
+
+
+        landing_page landing_page;
+        landing_page.setModal(true);
+        landing_page.exec();
 
 }
 
-void landing_page3::on_pushButton_4_clicked()
+void landing_page3::on_pushButton_clicked()
 {
     ui->Phone_num->setStyleSheet("");
     ui->seat_num->setStyleSheet("");
@@ -79,7 +97,7 @@ void landing_page3::on_pushButton_4_clicked()
         query.bindValue(":seat_num",seat_num);
         query.bindValue(":tick_name",tick_name);
         query.bindValue(":Phone_num",Phone_num);
-        query1.prepare("update "+FromTo+" set is_Reserved = 1 where Seat_Number=: seat_num");
+        query1.prepare("update "+FromTo+" set is_Reserved = 1 where Seat_Number=:seat_num");
         query1.bindValue(":seat_num", seat_num);
         query2.prepare("select is_Reserved from "+FromTo+" where Seat_Number= :seat_num");
         query2.bindValue(":seat_num", seat_num);
@@ -145,3 +163,4 @@ void landing_page3::on_change_ps_btn_clicked()
     password_change.setModal(true);
     password_change.exec();
 }
+
